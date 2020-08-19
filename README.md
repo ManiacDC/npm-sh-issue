@@ -6,7 +6,7 @@ npm install
 
 Open a Git Bash window
 
-note that script-shell in .npmrc is set to "sh"
+note that tsc in the script is launched via "sh -c"
 
 Run the following script:
 
@@ -39,7 +39,7 @@ node test.js
 is run directly (which launches node using winpty.exe rather than sh.exe), the issue does not occur.
 
 
-The results vary based on the shell being used by npm (script-shell in .npmrc) and the shell used to launch the node script. See the table below for reference
+The results vary based on the shell being used to launch tsc and the shell used to launch the node script. See the table below for reference
 
 |                      | sh   | bash | powershell | <blank= default to cmd> |
 |----------------------|------|------|------------|-------------------------|

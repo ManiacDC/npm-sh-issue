@@ -13,7 +13,6 @@ Run the following script:
 ```
 ./launch.sh
 ```
-```
 
 OR run:
 

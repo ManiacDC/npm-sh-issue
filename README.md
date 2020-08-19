@@ -38,6 +38,21 @@ node test.js
 
 is run directly (which launches node using winpty.exe rather than sh.exe), the issue does not occur.
 
+Alternate reproduction method using sleep, launched from a .sh script:
+Run the following script:
+
+```
+./launchSleep.sh
+```
+
+OR run:
+
+```
+sh -c 'node ./testSleep.js'
+```
+
+Notice that the sleep process is not killed
+
 
 The results vary based on the shell being used to launch tsc and the shell used to launch the node script. See the table below for reference
 
